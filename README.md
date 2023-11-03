@@ -1,2 +1,2 @@
 # Web_Portfolio
-Web portfolio
+Chloe Su Eun Choi
