@@ -1,3 +1,9 @@
+* {
+    /* border: 2px dotted black */
+}
+
 nav ul li {
     background-color: blue;
+    margin: 1em;
+    padding: 1em;
 }
