@@ -9,16 +9,18 @@ nav ol li {
     display: inline;
     color: white;
 }
+
 header nav ol li a:hover{
     background: rgb(42, 255, 149);
     text-decoration: underline;
 }
 
-h2 {
-    background-color: rgb(71, 185, 223);
+H2 {
+    background-color: powderblue;
     color: rgb(254, 254, 254);
     padding: 10px;
     text-align: center;
+    color: white;
     } 
 
 
@@ -37,10 +39,6 @@ img {
     margin: 2em;
 }
 
-H2 {
-    background-color: powderblue;
-    color: white;
-}
 
 #about img:first-of-type ~ img {
     border: 3px solid rgb(86, 226, 104);
