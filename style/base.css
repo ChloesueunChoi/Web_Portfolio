@@ -9,8 +9,9 @@ nav ol li {
     display: inline;
     color: white;
 }
-nav ol {
-    padding-left: 3em;
+header nav ol li a:hover{
+    background: rgb(42, 255, 149);
+    text-decoration: underline;
 }
 
 h2 {
