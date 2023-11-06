@@ -2,17 +2,50 @@
     /* border: 2px dotted black */
 }
 
-nav ul li {
-    background-color: blue;
+nav ol li {
+    background-color: rgb(245, 247, 112);
     margin: 1em;
     padding: 1em;
     display: inline;
+    color: white;
+}
+nav ol {
+    padding-left: 3em;
+}
+
+h2{
+    background-color: rgb(71, 185, 223);
+    color: rgb(254, 254, 254);
+    padding: 10px;
+    text-align: center;
+    } 
+
+table {
+    margin: 4em;
+    color: rgb(89, 148, 103);
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 3px solid rgb(178, 178, 249);
 }
 
 img {
+    /*float: left;*/
     display: block;
+    display: inline;
+    margin: 2em;
 }
 
-section#about p::first-letter {
-    font-size: 400%;
+H2 {
+    background-color: powderblue;
+    color: white;
+}
+
+#about img:first-of-type ~ img {
+    border: 3px solid rgb(86, 226, 104);
+}
+p {
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+    padding: 5px;
 }
