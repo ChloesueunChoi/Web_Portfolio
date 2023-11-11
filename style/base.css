@@ -1,9 +1,24 @@
-* {
-    /* border: 2px dotted black */
+h1 {    
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid peachpuff;
+    margin:0;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+nav {
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
 nav ol li {
-    background-color: rgb(245, 247, 112);
+    background-color: rgb(240, 240, 60);
+    align-items: center;
     margin: 1em;
     padding: 1em;
     display: inline;
@@ -11,11 +26,12 @@ nav ol li {
 }
 
 header nav ol li a:hover{
-    background: rgb(42, 255, 149);
+    background: rgb(6, 255, 131);
     text-decoration: underline;
 }
 
-H2 {
+
+h2 {
     background-color: powderblue;
     color: rgb(254, 254, 254);
     padding: 10px;
@@ -32,12 +48,13 @@ table {
     border: 3px solid rgb(178, 178, 249);
 }
 
+
 img {
-    /*float: left;*/
     display: block;
-    display: inline;
-    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 
 #about img:first-of-type ~ img {
