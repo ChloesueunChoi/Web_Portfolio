@@ -21,14 +21,16 @@ h3 {
     padding-left: 20px;
 }
 
-nav {
-    margin: 10px;
-    padding-bottom: 10px;
+@media(max-width:1300px){
+    #grid{
+        display: block;
+    }
+    h1 {
+        border-bottom: none;
+    }
 }
 
 nav ol li {
-    background-color: rgb(240, 240, 60);
-    align-items: center;
     margin: 1em;
     padding: 1em;
     display: inline;
@@ -37,7 +39,6 @@ nav ol li {
 
 header nav ol li a:hover{
     background: rgb(6, 255, 131);
-    text-decoration: underline;
 }
 
 
@@ -74,6 +75,7 @@ figcaption , details {
 #about img:first-of-type ~ img {
     border: 3px solid rgb(86, 226, 104);
 }
+
 p {
     margin: auto;
     width: 50%;
