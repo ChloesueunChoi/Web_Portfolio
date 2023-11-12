@@ -16,6 +16,10 @@ h3 {
     display: grid;
     grid-template-columns: 300px 1fr;
 }
+#profile {
+    font-size: 20px;
+    padding-left: 20px;
+}
 
 nav {
     margin: 10px;
