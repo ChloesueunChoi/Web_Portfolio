@@ -1,16 +1,24 @@
+body {
+    background-color: rgb(245,245,184);
+}
+
 h1 {    
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     border-bottom: 3px solid peachpuff;
     margin:0;
     padding: 20px;
+    color: rgb(255,115,140);
 }
 
 h3 {
     font-size: 20px;
     text-align: center;
-    padding-bottom: 10px;
-}
+    color: rgb(122,171,91);
+    text-align: center;
+    padding: none;
+    margin-bottom: 5px;
+    }
 
 #grid {
     display: grid;
@@ -30,26 +38,29 @@ h3 {
     }
 }
 
+nav ol li a {
+    color: rgb(122,171,91);
+}
+
 nav ol li {
     margin: 1em;
     padding: 1em;
     display: inline;
-    color: white;
+    font-size: 20px;
 }
 
 header nav ol li a:hover{
-    background: rgb(6, 255, 131);
+    background: rgb(166,230,219);
 }
 
 
 h2 {
-    background-color: powderblue;
+    background-color: rgb(166,230,219);
     color: rgb(254, 254, 254);
     padding: 10px;
     text-align: center;
     color: white;
     } 
-
 
 table {
     margin: 4em;
@@ -64,6 +75,13 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#chloelogo {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    float: left;
 }
 
 figcaption , details {
