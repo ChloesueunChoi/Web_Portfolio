@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(245,245,184);
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {    
@@ -33,6 +33,11 @@ h3 {
     #grid{
         display: block;
     }
+}
+
+#table {
+    display: inline;
+    text-align: center;
 }
 
 nav ol li a {
@@ -84,7 +89,6 @@ img {
 figcaption , details {
     text-align: center;
 }
-
 
 
 #about img:first-of-type ~ img {
