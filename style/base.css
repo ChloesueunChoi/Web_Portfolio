@@ -29,12 +29,9 @@ h3 {
     padding-left: 20px;
 }
 
-@media(max-width:1300px){
+@media(max-width:1000px){
     #grid{
         display: block;
-    }
-    h1 {
-        border-bottom: none;
     }
 }
 
