@@ -2,8 +2,9 @@
     font-family: 'Playfair Display', serif;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
+body {  
+    background: rgb(245, 245, 178);
+    background: linear-gradient(0deg, rgb(241, 247, 177) 0%, rgba(255,255,255,1) 100%);
 }
 
 h1 {    
@@ -68,7 +69,6 @@ header nav ol li a:hover{
     color: white;
 }
 
-
 h2 {
     background-color: rgb(166,230,219);
     color: rgb(254, 254, 254);
@@ -79,10 +79,12 @@ h2 {
     } 
 
 table {
+    width: auto;
     color: rgb(89, 148, 103);
     border: 1px dashed rgb(178, 178, 249);
-    margin: auto;
+    margin: 30px;
     text-align: center;
+    padding: none;
 }
 th, td {
     border-bottom: 1px solid rgb(204, 166, 231);
@@ -115,7 +117,6 @@ figcaption , details {
 }
 
 p {
-    margin: auto;
-    width: 50%;
-    padding: 5px;
+    margin: none;
+    padding: none;
 }
