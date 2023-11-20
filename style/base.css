@@ -1,17 +1,18 @@
-body {
-    background-color: rgb(255, 255, 255);
-    font-family: Didot, serif;
+* { 
+    font-family: 'Playfair Display', serif;
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+}
 
 h1 {    
     font-size: 60px;
     text-align: center;
-    border-bottom: 3px solid peachpuff;
     margin:0;
     padding: 20px;
     color: rgb(255,115,140);
-    letter-spacing: 1px;
+    letter-spacing: 5px;
 }
 
 h3 {
@@ -39,6 +40,17 @@ h3 {
     }
 }
 
+#work1, #work2, #paint1, #paint2 {
+    display: grid;
+    place-items: center;
+}
+
+#youtube {
+    display: grid;
+    place-items: center;
+
+}
+
 nav ol li a {
     color: rgb(122,171,91);
     border-left: 5px solid darkgreen;
@@ -53,6 +65,7 @@ nav ol li {
 
 header nav ol li a:hover{
     background: rgb(166,230,219);
+    color: white;
 }
 
 
@@ -62,14 +75,19 @@ h2 {
     padding: 10px;
     text-align: center;
     color: white;
+    letter-spacing: 10px;
     } 
 
 table {
     color: rgb(89, 148, 103);
-    display: inline;
-    border: 3px solid rgb(178, 178, 249);
-    padding: auto;
+    display: auto;
+    border: 1px dashed rgb(178, 178, 249);
     margin: auto;
+    text-align: center;
+}
+th, td {
+    border-bottom: 1px solid rgb(204, 166, 231);
+    text-align: center;
 }
 
 
