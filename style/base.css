@@ -1,14 +1,17 @@
 body {
     background-color: rgb(255, 255, 255);
+    font-family: Didot, serif;
 }
 
+
 h1 {    
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     border-bottom: 3px solid peachpuff;
     margin:0;
     padding: 20px;
     color: rgb(255,115,140);
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -16,17 +19,18 @@ h3 {
     text-align: center;
     color: rgb(122,171,91);
     text-align: center;
-    padding: none;
     margin-bottom: 5px;
     }
 
 #grid {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    display: flex;
+    grid-template-columns: 200px 1fr;
 }
+
 #profile {
     font-size: 20px;
-    padding-left: 20px;
+    display: inline;
+    position: relative;
 }
 
 @media(max-width:1000px){
@@ -35,20 +39,16 @@ h3 {
     }
 }
 
-#table {
-    display: inline;
-    text-align: center;
-}
-
 nav ol li a {
     color: rgb(122,171,91);
+    border-left: 5px solid darkgreen;
+    font-size: 20px;
 }
 
 nav ol li {
     margin: 1em;
     padding: 1em;
     display: inline;
-    font-size: 20px;
 }
 
 header nav ol li a:hover{
@@ -65,25 +65,27 @@ h2 {
     } 
 
 table {
-    margin: 4em;
     color: rgb(89, 148, 103);
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
+    display: inline;
     border: 3px solid rgb(178, 178, 249);
+    padding: auto;
+    margin: auto;
 }
 
 
 img {
-    display: inline;
     margin-left: auto;
     margin-right: auto;
 }
 
-#chloelogo {
+#logo {
     display: inline;
     margin: 10px;
     padding: 10px;
-    float: left;
+}
+
+#list {
+    display: flex;
 }
 
 figcaption , details {
