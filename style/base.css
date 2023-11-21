@@ -29,7 +29,6 @@ figure {
 
 #grid {
     display: flex;
-    grid-template-columns: 30% 30% 1fr;
 }
 
 #profile {
@@ -40,14 +39,8 @@ figure {
     margin-right: 50px;
 }
 
-@media(max-width:1000px){
-    #grid{
-        display: inline;
-    }
-}
-
 #work1, #work2, #paint1, #paint2 {
-    display: grid;
+    display: flex;
     place-items: center;
 }
 
@@ -78,7 +71,6 @@ header nav ol li a:hover{
     color: white;
 }
 
-
 h2 {
     background-color: rgb(166,230,219);
     color: rgb(254, 254, 254);
@@ -96,8 +88,13 @@ table {
     width: 300px;
 }
 
-th, td {
+th {
     border-bottom: 1px solid rgb(204, 166, 231);
+    text-align: center;
+}
+
+td {
+    font-size: 30px;
     text-align: center;
 }
 
@@ -128,7 +125,6 @@ figcaption , details {
 
 p {
     margin: none;
-    width: 50%;
     padding: 5px;
 }
 
