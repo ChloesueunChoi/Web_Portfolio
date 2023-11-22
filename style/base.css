@@ -2,9 +2,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
 
 h1 {    
     font-size: 60px;
@@ -21,7 +18,7 @@ h3 {
     color: rgb(122,171,91);
     text-align: center;
     margin-bottom: 5px;
-    }
+}
 
 figure {
     margin-right: none;
@@ -33,11 +30,7 @@ figure {
 
 #profile {
     font-size: 20px;
-    display: inline;
-    position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+
 
 #work1, #work2, #paint1, #paint2 {
     display: flex;
@@ -98,7 +91,6 @@ td {
     text-align: center;
 }
 
-
 img {
     margin-left: auto;
     margin-right: auto;
@@ -125,7 +117,4 @@ figcaption , details {
 
 p {
     margin: none;
-    padding: 5px;
-}
-
 
