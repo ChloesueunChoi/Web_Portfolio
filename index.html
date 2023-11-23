@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/base.css" rel="stylesheet" media="screen">
     <link href="./style/print.css" rel="stylesheet" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./js/main.js"></script>
     <title>Chloe Portfolio 😵‍💫</title> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,24 +15,37 @@
 
 <body>
     <header>
-            <div id="logo">
+            <div id="mainlogo">
                 <a href="https://chloesueunchoi.github.io/Web_Portfolio/">
                     <img src="image/chloelogo.png" width="20%">
                 </a>
             </div>
-            <nav>
-                <ol>
-                    <li><a href="#about">About Me!</a></li>
-                    <li><a href="#work">Work Projects</a></li>
-                    <li><a href="#Artworks">Art works</a></li>
-                    <li><a href="#Contact">How to contact with Me</a></li>
-                    <li><a href="extra.html">🎃</a></li>
-                </ol>
-            </nav>
+        <menu>
+            <span onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">About Me!</a>
+            <a href="#work">Work Projects</a>
+            <a href="#Artworks">Art works</a>
+            <a href="#Contact">Contact</a>
+            </div>
+        </menu>
     </header>
 
     <Main>
-        <section>
+        <section id="chloeintro">
             <a id="about"></a>
             <h2>About Me!: Chloe Su Eun Choi 🙋🏻‍♀️</h2>
 
@@ -46,13 +60,13 @@
             <div id="profile">
                 <div>
                     <h1>Hey there!</h1>
-                    <p>I am <strong>Chloe Su Eun Choi</strong>,student at 
+                    <p>I am <strong>Chloe Su Eun Choi</strong> ,student at 
                         <a href="https://www.sait.ca/" target="_blank" title="Sait homepage">Sait</a>
                     <br>
                     <br>
-                    Beyond my studies, I'm a <strong>connoisseur</strong> of the arts and design, with a particular fondness for movies that transport me to different worlds.
+                    Beyond my studies, I'm a <strong>connoisseur</strong> of the arts and design 🖼️, with a particular fondness for movies that transport me to different worlds.
                     <br>
-                    I believe that in the realm of UX, as in cinema and the arts, the power of storytelling and aesthetics is paramount, <br>and I'm here to <u>explore, create, and bridge</u> these worlds together! 🗺️
+                    I believe that in the realm of UX, as in cinema and the arts, the power of storytelling and aesthetics is paramount, <br>and I'm here to <u>explore 🔭, create 🧞, and bridge 🌉</u> these worlds together! 🗺️
                     </p>
                 </div>
             </div>
