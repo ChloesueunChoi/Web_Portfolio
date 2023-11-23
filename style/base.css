@@ -11,10 +11,9 @@ header {
 menu {
     float: right;
     padding-right: 30px;
-    font-size:50px;
+    font-size:60px;
     cursor:pointer;
     color: rgb(166,230,219);
-    font-size: 30px;
 }
 
 body {
@@ -85,12 +84,44 @@ h3 {
 
 #grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
 #profile {
+    width: 50%;
+    text-align: center;
     font-size: 16px;
+    margin: 0 auto;
 }
+
+#grid > div {
+    width: 45%;
+}
+
+#grid figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    #grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grid figure {
+        margin-bottom: 20px;
+    }
+
+    #grid figure img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 #youtube {
     display: flex;
@@ -109,29 +140,41 @@ h2 {
     letter-spacing: 5px;
     } 
 
+
 table {
     color: rgb(89, 148, 103);
     border: 1px dashed rgb(178, 178, 249);
     margin: auto;
     text-align: center;
+    width: 30%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 20px;
 }
 
 th {
     border-bottom: 1px solid rgb(204, 166, 231);
-    text-align: center;
-    letter-spacing: 2px;
 }
 
 td {
-    font-size: 300%;
-    text-align: center;
+    border-bottom: 1px solid rgb(178, 178, 249);
 }
 
 
-img {
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    
+    th, td {
+        padding: 8px 12px; 
+        font-size: 14px; 
+    }
 }
+
 
 #mainlogo {
     display: inline;
