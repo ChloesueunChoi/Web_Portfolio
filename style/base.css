@@ -1,9 +1,67 @@
 * { 
     font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+menu {
+    float: right;
+    padding-right: 30px;
+    font-size:50px;
+    cursor:pointer;
+    color: rgb(166,230,219);
 }
 
 body {
     background-color: rgb(255, 255, 255);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(166,230,219);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 h1 {    
@@ -20,7 +78,8 @@ h3 {
     text-align: center;
     color: rgb(122,171,91);
     text-align: center;
-    margin-bottom: 5px;
+    margin: 5px;
+    padding: 5px;
     }
 
 #grid {
@@ -34,48 +93,18 @@ h3 {
     position: relative;
 }
 
-@media(max-width:1000px){
-    #grid{
-        display: inline;
-    }
-}
-
-#work1, #work2, #paint1, #paint2 {
-    display: grid;
-    place-items: center;
-}
-
 #youtube {
     display: grid;
     place-items: center;
 
 }
 
-nav ol li a {
-    color: rgb(122,171,91);
-    border-left: 5px solid darkgreen;
-    font-size: 20px;
-}
-
-nav ol li {
-    margin: 1em;
-    padding: 1em;
-    display: inline;
-}
-
-header nav ol li a:hover{
-    background: rgb(166,230,219);
-    color: white;
-}
-
-
 h2 {
     background-color: rgb(166,230,219);
-    color: rgb(254, 254, 254);
     padding: 10px;
     text-align: center;
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     } 
 
 table {
@@ -84,8 +113,15 @@ table {
     margin: auto;
     text-align: center;
 }
-th, td {
+
+th {
     border-bottom: 1px solid rgb(204, 166, 231);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+td {
+    font-size: 300%;
     text-align: center;
 }
 
@@ -95,27 +131,60 @@ img {
     margin-right: auto;
 }
 
-#logo {
+#mainlogo {
     display: inline;
-    margin: 10px;
-    padding: 10px;
-}
-
-#list {
-    display: flex;
 }
 
 figcaption , details {
     text-align: center;
 }
 
-
-#about img:first-of-type ~ img {
-    border: 3px solid rgb(86, 226, 104);
+p {
+    padding: 10px;
+    text-align: center;
 }
 
-p {
-    margin: auto;
-    width: 50%;
-    padding: 5px;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.work-item {
+    flex: 0.0 calc(20% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-item img {
+    width: 400px; 
+    height: auto; 
+    margin: 10px;
+}
+
+.work-item img:hover {
+    transform: scale(1.3); 
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: row; 
+        align-items: flex-start; 
+    }
+
+figcaption,details {
+        font-family: 'Noto Serif KR', serif;
+    }
+}
+
+footer {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 0 25px;
+    line-height: 30px;
+    color: #8e8f8a;
+    border-top: 1px solid #dee5e7;
+    background-color: #f2f2f2;
 }

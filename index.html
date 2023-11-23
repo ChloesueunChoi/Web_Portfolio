@@ -5,59 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/base.css" rel="stylesheet" media="screen">
     <link href="./style/print.css" rel="stylesheet" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./js/main.js"></script>
     <title>Chloe Portfolio 😵‍💫</title> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-            <span id="logo">
+            <div id="mainlogo">
                 <a href="https://chloesueunchoi.github.io/Web_Portfolio/">
                     <img src="image/chloelogo.png" width="20%">
                 </a>
-            </span>
-            <nav>
-                <ol>
-                    <li><a href="#about">About Me!</a></li>
-                    <li><a href="#work">Work Projects</a></li>
-                    <li><a href="#Artworks">Art works</a></li>
-                    <li><a href="#Contact">How to contact with Me</a></li>
-                    <li><a href="extra.html">🎃</a></li>
-                </ol>
-            </nav>
+            </div>
+        <menu>
+            <span onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">About Me!</a>
+            <a href="#work">Work Projects</a>
+            <a href="#Artworks">Art works</a>
+            <a href="#Contact">Contact</a>
+            </div>
+        </menu>
     </header>
 
     <Main>
-        <section>
+        <section id="chloeintro">
             <a id="about"></a>
             <h2>About Me!: Chloe Su Eun Choi 🙋🏻‍♀️</h2>
 
         <div id="grid">
             <div>
                 <figure>
-                <img src="image/Chloe.JPG" width="500px" height="330px">
+                <img src="image/Chloe.JPG" width="600px" height="400px">
                 <figcaption>Chloe's profile picture</figcaption>
                 </figure>
             </div>
             
             <div id="profile">
                 <div>
-                    <p>Hey there, I am <strong>Chloe Su Eun Choi</strong>,student at 
+                    <h1>Hey there!</h1>
+                    <p>I am <strong>Chloe Su Eun Choi</strong> ,student at 
                         <a href="https://www.sait.ca/" target="_blank" title="Sait homepage">Sait</a>
                     <br>
                     <br>
-                    Beyond my studies, I'm a <strong>connoisseur</strong> of the arts and design, with a particular fondness for movies that transport me to different worlds.
+                    Beyond my studies, I'm a <strong>connoisseur</strong> of the arts and design 🖼️, with a particular fondness for movies that transport me to different worlds.
                     <br>
-                    I believe that in the realm of UX, as in cinema and the arts, the power of storytelling and aesthetics is paramount, <br>and I'm here to <u>explore, create, and bridge</u> these worlds together
+                    I believe that in the realm of UX, as in cinema and the arts, the power of storytelling and aesthetics is paramount, <br>and I'm here to <u>explore 🔭, create 🧞, and bridge 🌉</u> these worlds together! 🗺️
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div>
-                <h3>My favorite</h3>
+        <div id="table">
+            <h3>My favorite</h3>
                 <table>
                     <tr>
                     <th>Movie</th>
@@ -75,35 +95,46 @@
                     </tr>
                     </tbody>
                 </table> 
-            </div>
-        </div>
         </div>
         </section>
 
+        <section>
         <a id="work"></a>
         <h2>Work Projects</h2>
             <h3 style="list-style-type:square"> Logo design </h3>
-                <div id="work1">
-                    <img src="image/chloelogo.png" width="20%">
-                    <figcaption>Chloe logo</figcaption>
+            <div class="flex-container">
+                <div class="work-item">
+                    <figure>
+                    <img src="image/chloelogo.png">
+                    </figure>
                 </div>
+            </div>
+            
             <h3 style="list-style-type:square"> Logo Branding: Coffee shop/Gourmet Cup</h3>
-                <div id="work2">
-                    <img src="image/work1.JPG" width="70%">
+            <div class="flex-container">
+                <div class="work-item">
+                    <img src="project/Gourmet cup.jpg">
+                    <img src="project/Portfolio Collection -Chloe-03.jpg">
+                    <img src="project/Portfolio Collection -Chloe-06.jpg">
+                    <img src="project/Portfolio Collection -Chloe-07.jpg">
+                    <img src="project/Portfolio Collection -Chloe-08.jpg">
+                </div>
+            </div>
                     <figcaption>Logo Branding work project for Gourmet Cup <a href="https://maps.app.goo.gl/SSWw4YHqzV356EWm7" target="_blank" title="Chloe's coffee shop">☕️</a>
                     </figcaption>
-                </div>
+        </section>
 
         <section>
-        <a id="Artworks"></a>
-        <h2>Art Works: Minhwa</h2>
-        <h3>Chloe's paintings</h3>
-        <p>I am really into
-            <a href="https://koreanfolkart.org/blogs/minhwa" target="_blank">Minhwa</a>,Traditional Korean Folk Art Painting 🖼️
-        </p>
-
-            <div id="paint1">
-                <img src="image/Artwork1.jpg" width="30%">
+            <a id="Artworks"></a>
+            <h2>Art Works: Minhwa</h2>
+            <h3>Chloe's paintings</h3>
+            <p>I am really into
+                <a href="https://koreanfolkart.org/blogs/minhwa" target="_blank">Minhwa</a>,Traditional Korean Folk Art Painting 🖼️
+            </p>
+            <div class="flex-container">
+                <div class="work-item">
+                <img src="image/Artwork1.jpg">
+                </div>
             </div>
                 <figcaption>파초도: Musa basjoo Paint ©Chloe Choi 
                 </figcaption>
@@ -115,8 +146,10 @@
                 Parcho represents the spirit of continuous self-improvement and unyielding determination, often expressed as "자강불식自强不息". Because of this, people held Parcho in high regard and affection.
                 </details>
             <br>
-            <div id="paint2">
-                <img src="image/Artwork2.JPG" width="30%">
+            <div class="flex-container">
+                <div class="work-item">
+                <img src="image/Artwork2.JPG">
+                </div>
             </div>
                 <figcaption>목련도: Magnolia ©Chloe Choi </figcaption>
                 <details>
@@ -126,15 +159,17 @@
                 Resembling lotus flowers attached to trees, they are called '목련木蓮' (magnolia) and are often depicted in folk paintings to resemble lotus flowers.<br>
                 Sometimes blooming in white and other times in red, these magnolias, often seen alongside rocks, are symbols of longevity.
                 </details>
+        </section>
         <br>
+        <section>
         <h3>More Painting at <a href="https://instagram.com/seeyousoon.art?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">instagram</a>🖼</h3>
         <br>
         <br>
-        <div id="youtube">
-            Minhwa Vlog (Korean ver)
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KhxpgZfzL5E?si=hjXFMrY9NatJ0Gmk&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
-        </div>
+            <div id="youtube">
+                <p>Minhwa Vlog (Korean ver)</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KhxpgZfzL5E?si=hjXFMrY9NatJ0Gmk&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
         <section>
@@ -147,19 +182,12 @@
             </p>
         <h3>Instagram</h3>
         </section>
-
         <br>
         <br>
-
     </Main>
-    <br>
-
-    <br>
-    <br>
+    </body>
+    
     <footer>
         <p>© 2023 Chloe Sueun Choi</p>
     </footer>
-
-
-</body>
 </html>
