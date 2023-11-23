@@ -5,7 +5,7 @@
 
 header {
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 menu {
@@ -14,6 +14,7 @@ menu {
     font-size:50px;
     cursor:pointer;
     color: rgb(166,230,219);
+    font-size: 30px;
 }
 
 body {
@@ -84,20 +85,21 @@ h3 {
 
 #grid {
     display: flex;
-    grid-template-columns: 200px 1fr;
+    flex-direction: column;
 }
 
 #profile {
-    font-size: 20px;
-    display: inline;
-    position: relative;
+    font-size: 16px;
 }
 
 #youtube {
-    display: grid;
-    place-items: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 h2 {
     background-color: rgb(166,230,219);
