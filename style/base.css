@@ -17,12 +17,14 @@ menu {
     font-size: 60px;
     cursor: pointer;
     color: rgb(166, 230, 219);
+    margin: none;
 }
 
 /* Body styles */
 body {
     background-color: rgb(255, 255, 255);
 }
+
 
 
 /* Sidebar navigation */
@@ -154,6 +156,14 @@ h3 {
         max-width: 100%;
         height: auto;
     }
+    menu {
+        margin: none;
+    }
+    #mainlogo figure img {
+        width: 50%;
+        margin-left: 105px; /* Or the desired width */
+        /* Other relevant styles */
+    }
 }
 
 /* profile item images */
@@ -210,11 +220,12 @@ th {
 
 td {
     border-bottom: 1px solid rgb(178, 178, 249);
+    font-size: 18px;
 }
 
 
 #mainlogo {
-    display: inline-block;
+    display: inline;
 }
 
 figcaption,
@@ -270,4 +281,5 @@ footer {
     color: #8e8f8a;
     border-top: 1px solid #dee5e7;
     background-color: #f2f2f2;
+    text-align: center;
 }

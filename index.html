@@ -6,7 +6,7 @@
     <link href="./style/base.css" rel="stylesheet" media="screen">
     <link href="./style/print.css" rel="stylesheet" media="print">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
     <title>Chloe Portfolio 😵‍💫</title> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,22 +18,11 @@
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
     <header>
         <menu>
             <span onclick="openNav()">&#9776;</span>
-                <script>
-                    function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                    }
-                    
-                    function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main").style.marginLeft= "0";
-                    }
-                </script>
-
+            
+            
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about">About Me!</a>
@@ -62,12 +51,13 @@
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
     ">
+    <button id="btn-alert" onclick="alert('Welcome to my pagepage 👻')">Click me for an alert!</button>
 
     <Main>
         <br>
         <section id="chloeintro">
             <a id="about"></a>
-            <h2>About Me!: Chloe Su Eun Choi 🙋🏻‍♀️</h2>
+            <h2>About Me!: Chloe Su Eun Choi</h2>
 
         <div id="grid">
             <div class="profile-item">
@@ -91,8 +81,7 @@
                 </div>
             </div>
         </div>
-
-        <div id="table">
+        <div>
             <h3>My favorite</h3>
                 <table>
                     <tr>
@@ -110,8 +99,8 @@
                     <td><a href="https://www.vangoghmuseum.nl/en/collection/s0176V1962/" target="_blank" title="Chloe's fav">🖼️</a></td>
                     </tr>
                     </tbody>
-                </table> 
-        </div>
+                </table>
+            </div>
         </section>
 
         <section>
@@ -201,9 +190,9 @@
         <br>
         <br>
     </Main>
-    </body>
-    
-    <footer>
-        <p>© 2023 Chloe Sueun Choi</p>
+    <footer id="pageFooter">
+        Chloe Su Eun Choi. All Rights Reserved. <script>document.write(new Date().getFullYear())</script>
     </footer>
+
+</body>
 </html>
