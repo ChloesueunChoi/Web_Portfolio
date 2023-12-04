@@ -20,24 +20,19 @@
 <body>
     <script src="./js/main.js"></script>
     <header>
-            <div id="mainlogo">
-                <a href="https://chloesueunchoi.github.io/Web_Portfolio/">
-                    <img src="image/chloelogo.png" width="20%">
-                </a>
-            </div>
         <menu>
             <span onclick="openNav()">&#9776;</span>
-            <script>
-                function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                }
-                
-                function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";
-                }
-            </script>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                    }
+                    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                    }
+                </script>
 
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -48,6 +43,14 @@
             <a href="extra.html">👻</a>
             </div>
         </menu>
+
+        <div id="mainlogo">
+            <a href="https://chloesueunchoi.github.io/Web_Portfolio/">
+                <figure>
+                <img src="image/chloelogo.png">
+                </figure>
+            </a>
+        </div>
     </header>
 
     <input type="button" value="day" onclick="
@@ -61,12 +64,13 @@
     ">
 
     <Main>
+        <br>
         <section id="chloeintro">
             <a id="about"></a>
             <h2>About Me!: Chloe Su Eun Choi 🙋🏻‍♀️</h2>
 
         <div id="grid">
-            <div>
+            <div class="profile-item">
                 <figure>
                 <img src="image/Chloe.JPG">
                 <figcaption>Chloe's profile picture</figcaption>

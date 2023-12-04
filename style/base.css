@@ -1,25 +1,31 @@
+/* All styling */
 * { 
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
 
+/* Header styles */
 header {
     padding-top: 30px;
     padding-left: 10px;
 }
 
+/* Menu styles */
 menu {
     float: right;
     padding-right: 30px;
-    font-size:60px;
-    cursor:pointer;
-    color: rgb(166,230,219);
+    font-size: 60px;
+    cursor: pointer;
+    color: rgb(166, 230, 219);
 }
 
+/* Body styles */
 body {
     background-color: rgb(255, 255, 255);
 }
 
+
+/* Sidebar navigation */
 .sidenav {
     height: 100%;
     width: 0;
@@ -27,12 +33,13 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(166,230,219);
+    background-color: rgb(166, 230, 219);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
+/* Sidebar */
 .sidenav a {
     padding: 10px 10px 10px 32px;
     text-decoration: none;
@@ -46,6 +53,7 @@ body {
     color: #f1f1f1;
 }
 
+/* Sidebar close button */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -54,76 +62,125 @@ body {
     margin-left: 50px;
 }
 
+
+/* Main content area */
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
 
+/* Responsive design for small height screens */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-h1 {    
+/* Heading styles */
+h1 {
     font-size: 60px;
     text-align: center;
-    margin:0;
+    margin: 0;
     padding: 20px;
-    color: rgb(255,115,140);
+    color: rgb(255, 115, 140);
     letter-spacing: 5px;
 }
+
+
+h2 {
+    background-color: rgb(166, 230, 219);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
 
 h3 {
     font-size: 20px;
     text-align: center;
-    color: rgb(122,171,91);
+    color: rgb(122, 171, 91);
     text-align: center;
     margin: 5px;
     padding: 5px;
-    }
+}
 
+/* Grid layout */
 #grid {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
 }
-
+/* Profile section */
 #profile {
     width: 50%;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0 auto;
 }
-
-#grid > div {
-    width: 45%;
+/*mainlogo section */
+#mainlogo figure img {
+    width: 20%;
+    margin: none;
+    padding: none;
 }
 
+/* Grid item styles */
+#grid > div {
+    width: 55%;
+}
+
+/* Grid images */
 #grid figure img {
     max-width: 100%;
     height: auto;
 }
 
-
+/* Media query for tablet screens */
 @media (max-width: 768px) {
     #grid {
         flex-direction: column;
-        align-items: center;
+        align-items: auto;
     }
-
     #grid figure {
         margin-bottom: 20px;
     }
-
     #grid figure img {
         max-width: 100%;
         height: auto;
     }
 }
 
+/* profile item images */
+.profile-item img {
+    min-width: 400px;
+    min-height: auto;
+    }
 
-#youtube {
+/* Work item images */
+.work-item {
+    flex: 0.0 calc(33.33% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+/* Work item images */
+.work-item figure img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    min-width: 200px;
+    min-height: auto;
+    }
+
+
+/* YouTube section */
+#youtube { /* Styles for YouTube section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,15 +189,7 @@ h3 {
 }
 
 
-h2 {
-    background-color: rgb(166,230,219);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    letter-spacing: 5px;
-    } 
-
-
+/* Table styles */
 table {
     color: rgb(89, 148, 103);
     border: 1px dashed rgb(178, 178, 249);
@@ -164,31 +213,22 @@ td {
 }
 
 
-@media screen and (max-width: 600px) {
-    table {
-        width: 100%;
-    }
-    
-    th, td {
-        padding: 8px 12px; 
-        font-size: 14px; 
-    }
-}
-
-
 #mainlogo {
-    display: inline;
+    display: inline-block;
 }
 
-figcaption , details {
+figcaption,
+details {
     text-align: center;
 }
 
+/* Paragraph styles */
 p {
     padding: 10px;
     text-align: center;
 }
 
+/* Flex container */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -196,11 +236,6 @@ p {
     gap: 20px;
 }
 
-.work-item {
-    flex: 0.0 calc(20% - 20px);
-    margin: 10px;
-    transition: transform 0.3s ease-in-out;
-}
 
 .work-item img {
     width: 400px; 
@@ -214,15 +249,18 @@ p {
 
 @media (max-width: 768px) {
     .flex-container {
-        flex-direction: row; 
-        align-items: flex-start; 
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-figcaption,details {
-        font-family: 'Noto Serif KR', serif;
+/* Figure caption and details */
+figcaption,
+details {
+    font-family: 'Noto Serif KR', serif;
     }
 }
 
+/* Footer styles */
 footer {
     position: absolute;
     height: 60px;
