@@ -17,14 +17,12 @@ menu {
     font-size: 60px;
     cursor: pointer;
     color: rgb(166, 230, 219);
-    margin: none;
 }
 
 /* Body styles */
 body {
     background-color: rgb(255, 255, 255);
 }
-
 
 
 /* Sidebar navigation */
@@ -128,13 +126,11 @@ h3 {
 /*mainlogo section */
 #mainlogo figure img {
     width: 20%;
-    margin: none;
-    padding: none;
 }
 
 /* Grid item styles */
 #grid > div {
-    width: 55%;
+    width: 60%;
 }
 
 /* Grid images */
@@ -147,18 +143,19 @@ h3 {
 @media (max-width: 768px) {
     #grid {
         flex-direction: column;
-        align-items: auto;
+        align-items: center;
     }
     #grid figure {
-        margin-bottom: 20px;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
     }
+
     #grid figure img {
-        max-width: 100%;
+        max-width: 326px;
         height: auto;
     }
-    menu {
-        margin: none;
-    }
+
     #mainlogo figure img {
         width: 50%;
         margin-left: 105px; /* Or the desired width */
@@ -168,7 +165,7 @@ h3 {
 
 /* profile item images */
 .profile-item img {
-    min-width: 400px;
+    min-width: auto;
     min-height: auto;
     }
 
