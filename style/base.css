@@ -163,6 +163,34 @@ h3 {
     }
 }
 
+.button {
+    align-items: center;
+}
+
+.button input[type="button"],
+.button button {
+    padding: 10px 20px; /* 버튼 안의 여백 설정 */
+    font-size: 18px; /* 원하는 폰트 크기 설정 */
+    background-color: rgb(229, 237, 162);
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f7f4d2, #bdfcf8);
+    box-shadow: none;
+}
+
+.button input[type="button"]:hover,
+.button button:hover {
+/* 호버 시 그라데이션 색상 변경 */
+background: linear-gradient(to right, #bdfcf8, #f4d8ec);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* profile item images */
 .profile-item img {
     min-width: auto;
