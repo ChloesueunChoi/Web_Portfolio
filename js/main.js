@@ -41,3 +41,9 @@ button.addEventListener('mouseout', () => {
 button.innerText = defaultLabel;
 });
 
+let count = 1;
+
+document.getElementById('btn-counter').onclick = () => {
+count = count + 1;
+document.getElementById('txt-counter').innerHTML = `❤️‍🔥: ${count}`;
+};
