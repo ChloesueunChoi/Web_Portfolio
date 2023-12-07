@@ -171,7 +171,7 @@ h3 {
     border-radius: 15px;
     cursor: pointer;
     background: linear-gradient(to right, #f7f4d2, #bdfcf8);
-
+    border: none;
 }
 
 .button input[type="button"]:hover,
@@ -190,6 +190,7 @@ background: linear-gradient(to right, #bdfcf8, #f4d8ec);
 .counter {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .counter button {
@@ -197,6 +198,7 @@ background: linear-gradient(to right, #bdfcf8, #f4d8ec);
     font-size: 18px; /* 원하는 폰트 크기 설정 */
     background-color: rgb(229, 237, 162);
     border-radius: 15px;
+    border: none;
     cursor: pointer;
     background: linear-gradient(to right, #f7f4d2, #bdfcf8); 
 }
@@ -214,12 +216,18 @@ background: linear-gradient(to right, #bdfcf8, #f4d8ec);
 
 .even {
     color: rgb(0, 0, 255); /* 짝수일 때의 색상 (예: 파란색) */
-    border: solid #bdfcf8;
+    background: linear-gradient(to right, #bdfcf8, #f4d8ec);
+    border-radius: 15px;
+    padding: 10px 20px; /* 버튼 안의 여백 설정 */
+    font-size: 18px;
 }
 
 .odd {
     color: red; /* 홀수일 때의 색상 (예: 빨간색) */
-    border: solid pink
+    background: linear-gradient(to right, #f7f4d2, #bdfcf8); 
+    border-radius: 15px;
+    padding: 10px 20px; /* 버튼 안의 여백 설정 */
+    font-size: 18px;
 }
 
 
