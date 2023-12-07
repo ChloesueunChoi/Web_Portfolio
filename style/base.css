@@ -171,7 +171,7 @@ h3 {
     border-radius: 15px;
     cursor: pointer;
     background: linear-gradient(to right, #f7f4d2, #bdfcf8);
-    box-shadow: none;
+
 }
 
 .button input[type="button"]:hover,
@@ -186,20 +186,42 @@ background: linear-gradient(to right, #bdfcf8, #f4d8ec);
     align-items: center;
 }
 
+/* 카운터 버튼 꾸미기 */
 .counter {
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
-.container p {
-    font-size: 30px;
-    color: #f45130;
+.counter button {
+    padding: 10px 20px; /* 버튼 안의 여백 설정 */
+    font-size: 18px; /* 원하는 폰트 크기 설정 */
+    background-color: rgb(229, 237, 162);
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f7f4d2, #bdfcf8); 
 }
+
+.counter input[type="button"]:hover,
+.counter button:hover {
+/* 호버 시 그라데이션 색상 변경 */
+background: linear-gradient(to right, #bdfcf8, #f4d8ec);
+}
+
 
 #txt-counter {
-    margin: 2dvb; 
+    margin: 3dvb; 
 }
+
+.even {
+    color: rgb(0, 0, 255); /* 짝수일 때의 색상 (예: 파란색) */
+    border: solid #bdfcf8;
+}
+
+.odd {
+    color: red; /* 홀수일 때의 색상 (예: 빨간색) */
+    border: solid pink
+}
+
 
 /* profile item images */
 .profile-item img {
@@ -317,4 +339,46 @@ footer {
     border-top: 1px solid #dee5e7;
     background-color: #f2f2f2;
     text-align: center;
+}
+
+/* 스타일링은 여기에 */
+.colorful-list {
+    list-style: none;
+    padding: 0;
+}
+
+.colorful-item {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* painting */
+
+/* Ordered list styles */
+#numbers {
+    list-style: none;
+    padding: 0;
+}
+
+  /* Individual list item styles */
+#numbers li {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+  /* Even numbers style */
+#numbers li:nth-child(even) {
+    color: #94b1fa;
+}
+
+  /* Odd numbers style */
+#numbers li:nth-child(odd) {
+    background-color: #94b1fa8d;
+    color: rgb(255, 255, 255);
 }
